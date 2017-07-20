@@ -16,7 +16,7 @@ pinMode(dirArm, OUTPUT);
  digitalWrite(dirArm,dir);
  delay(50);
  
- while ( ! analogRead(A0)) // Wenn der Taster gdrückt wird dann drehen.
+ while ( ! analogRead(A0)) // Wenn der Taster gedrückt wird dann drehen.
  for(int r=0;r<steps;r++){
     digitalWrite(dirArm, HIGH);  // Dreh - Richtung
    digitalWrite(stepperArm, HIGH);
@@ -26,7 +26,7 @@ pinMode(dirArm, OUTPUT);
    
 
  }
-while ( ! analogRead(A1)) // Wenn der Taster gdrückt wird dann drehen.
+while ( ! analogRead(A1)) // Wenn der Taster gedrückt wird dann drehen.
  for(int l=0;l<steps;l++){
     digitalWrite(dirArm, LOW);  // Dreh - Richtung
    digitalWrite(stepperArm, HIGH);
